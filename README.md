@@ -1,0 +1,2 @@
+# C-OS-es6
+Scrivere un programma in C in cui un processo padre P0 genera 10 processi figli. P0 dopo aver generato generato i figli invia ciclicamente per 10 volte un segnale SIGUSR1 ad ogni figlio.  Ogni figlio si mette in attesa di un segnale, quando riceve il segnale SIGUSR1, stampa a video il proprio PID e si rimette in attesa di un segnale. Quando riceve SIGUSR2 termina. P0 dopo aver concluso il ciclo, invia a tutti i figli il segnale USR2, attende la terminazione di tutti i figli e termina esso stesso.
